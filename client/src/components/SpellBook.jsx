@@ -5,7 +5,7 @@ const SpellBook = () => {
 
     return(
       <div>
-        <h1> Spell Book</h1>
+        <h1> Spell Book </h1>
         <SpellList />
       </div>
     )

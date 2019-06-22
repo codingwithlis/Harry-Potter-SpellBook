@@ -1,5 +1,6 @@
 import React from "react";
 import Spells from "./Spells.jsx";
+import Form from "./Form.jsx";
 import axios from "axios";
 
 class SpellList extends React.Component {
@@ -9,6 +10,8 @@ class SpellList extends React.Component {
     this.state = {
       spells: [{ name:"Alohomora", description: "unlocks locks" }, { name:"Confundo", description:"confuses target"}],
       showForm: false,
+      name: '',
+      description: ''
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -32,7 +35,7 @@ class SpellList extends React.Component {
           })}
         </ul>
         <button onClick={this.handleClick}>Add Spell</button>
-        {this.state.showForm ? "True" : <div></div>}
+        {this.state.showForm ? <Form /> : <div></div>}
       </div>
     );
   }

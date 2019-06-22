@@ -1,9 +1,19 @@
 import React from "react";
 
-class Form extends React {
-  constructor(props) {
-    super(props);
-  }
+const Form = (props) => {
+  return (
+    <form onSubmit={props.handleSubmit} >
+      <label>Spell Name</label>
+      <br /> 
+      <input id="name" onChange={props.handleChange}></input>
+      <br />
+      <label>Description</label>
+      <br />
+      <input id="description" onChange={props.handleChange}></input>
+      <br />
+      <button>Submit</button>
+    </form>
+  )
 }
 
 export default Form;
