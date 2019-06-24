@@ -13,16 +13,23 @@ class SpellList extends React.Component {
       name: '',
       description: ''
     };
-    this.handleClick = this.handleClick.bind(this);
+    this.toggleForm= this.toggleForm.bind(this);
+    this.handleFormChange = this.handleFormChange.bind(this);
   }
 
   componentDidMount () {
     
   }
 
-  handleClick () {
+  toggleForm () {
     this.setState({
       showForm: !this.state.showForm,
+    })
+  }
+
+  handleFormChange (e) {
+    this.setState({
+      [e.target.id]: e.target.value
     })
   }
 
@@ -34,8 +41,8 @@ class SpellList extends React.Component {
             return <Spells spell={spell} key={i} />;
           })}
         </ul>
-        <button onClick={this.handleClick}>Add Spell</button>
-        {this.state.showForm ? <Form /> : <div></div>}
+        <button onClick={this.toggleForm}>Add Spell</button>
+        {this.state.showForm ? <Form handleChange = {this.handleFormChange} toggleForm={this.toggleForm}/> : <div></div>}
       </div>
     );
   }
