@@ -1,0 +1,41 @@
+* {
+  font-family: 'Shadows Into Light', cursive;
+}
+
+html{
+  background-image: url(https://i.pinimg.com/originals/dc/ef/f6/dceff6eb8639f46f68f25c36125bdbeb.jpg);
+}
+
+h1, h2, h3 {
+  font-family: 'Cinzel', serif;
+}
+
+h1 {
+  font-size: 86px;
+}
+
+h3 {
+  font-size: 64px;
+}
+
+ul {
+  list-style: none;
+}
+
+li{
+  font-size: 64px;
+}
+
+button{
+  font-size: 32px;
+}
+
+#app {
+  display: flex;
+  justify-content: center
+
+}
+
+.toggle {
+  font-size: 16px;
+}

@@ -1,7 +1,6 @@
 import React from "react";
 import Spells from "./Spells.jsx";
 import Form from "./Form.jsx";
-import axios from "axios";
 
 class SpellList extends React.Component {
   constructor(props) {
@@ -13,6 +12,7 @@ class SpellList extends React.Component {
       name: '',
       description: ''
     };
+
     this.toggleForm= this.toggleForm.bind(this);
     this.handleFormChange = this.handleFormChange.bind(this);
   }
@@ -31,6 +31,14 @@ class SpellList extends React.Component {
     this.setState({
       [e.target.id]: e.target.value
     })
+  }
+
+  handleFormSubmit () {
+
+  }
+
+  getAllSpells () {
+
   }
 
   render() {
