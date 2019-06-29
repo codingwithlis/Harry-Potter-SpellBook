@@ -11,11 +11,13 @@ const SpellbookSchema = new Schema({
   description: String
 });
 
-const Spellbook = mongoose.model('Spellbook', SpellbookSchema);
+exports.Spellbook = mongoose.model('Spellbook', SpellbookSchema);
 
-Spellbook.create(seederSpells, (err)=>{
-  if (err) {
-    console.log(err);
-  }
-  mongoose.connection.close();
-});
+//this created the db now it's useless 
+// Spellbook.create(seederSpells, (err)=>{
+//   if (err) {
+//     console.log(err);
+//   }
+//   mongoose.connection.close();
+// });
+

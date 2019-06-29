@@ -6,7 +6,6 @@ function Spells (props) {
       {props.spell.name} - {props.spell.description}
     </li>
   )
-
 }
 
 export default Spells;
