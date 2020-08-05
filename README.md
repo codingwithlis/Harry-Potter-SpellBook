@@ -15,6 +15,6 @@ Run ```npm run react-dev``` to get webpack running.
 Run ```npm start``` to get server running.
 
 ### Stack
-[React on the front end] (#https://reactjs.org/)
-[Node and Express on the backend] (#https://expressjs.com/)
-[MongoDB for our database] (#https://mongoosejs.com/ and #https://www.mongodb.com/)
+[React on the front end](#https://reactjs.org/)
+[Node and Express on the backend](#https://expressjs.com/)
+[MongoDB for our database](#https://www.mongodb.com/)
