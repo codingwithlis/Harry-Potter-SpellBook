@@ -8,9 +8,13 @@ Run ```npm install```
 
 Make sure mongodb is running on your machine, and then run ```npm run seed``` to seed your database with the beginning data.
 
-Run ```npm run react-dev``` to get webpack running.
+Run ```npm run build``` to get webpack running.
 
-Run ```npm start``` to get server running.
+On a different terminal run ```npm start``` to get server running.
+
+Note: both ```npm run build``` and ```npm start``` need to be running for the app to work correctly 
+
+Open http://localhost:4444/ to see your app
 
 ### Stack
 React on the front end (https://reactjs.org/)
